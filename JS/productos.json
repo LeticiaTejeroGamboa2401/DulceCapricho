@@ -1,7 +1,7 @@
 [
     {
         "id": "pastel-chocolate",
-        "tittle": "Pastel Chocolate",
+        "title": "Pastel Chocolate",
         "imagen": "IMG/PastelChocolate.png",
         "category": {
             "nombre": "Pasteles",
@@ -9,9 +9,10 @@
         },
         "price": 150
     },
+
     {
         "id": "pastel-fresa",
-        "tittle": "Pastel Fresa",
+        "title": "Pastel Fresa",
         "imagen": "IMG/PastelFresas.png",
         "category": {
             "nombre": "Pasteles",
@@ -22,7 +23,7 @@
 
     {
         "id": "pastel-coco",
-        "tittle": "Pastel Coco",
+        "title": "Pastel Coco",
         "imagen": "IMG/PastelCoco.png",
         "category": {
             "nombre": "Pasteles",
@@ -33,13 +34,13 @@
 
     {
         "id": "pastel-tres-leches",
-        "titulo": "Pastel Tres Leches",
+        "title": "Pastel Tres Leches",
         "imagen": "IMG/PastelTresLeches.png",
-        "categoria": {
+        "category": {
             "nombre": "Pasteles",
             "id": "pasteles"
         },
-        "precio": 165
+        "price": 165
     },
 
 
@@ -49,46 +50,46 @@
 
     {
         "id": "pay-queso",
-        "titulo": "Pay Queso",
+        "title": "Pay Queso",
         "imagen": "IMG/PayQueso.png",
-        "categoria": {
+        "category": {
             "nombre": "Pay",
             "id": "pay"
         },
-        "precio": 95
+        "price": 95
     },
 
     {
         "id": "pay-fresa",
-        "titulo": "Pay Fresa",
+        "title": "Pay Fresa",
         "imagen": "IMG/PayFresa.png",
-        "categoria": {
+        "category": {
             "nombre": "Pay",
             "id": "pay"
         },
-        "precio": 115
+        "price": 115
     },
 
     {
         "id": "pay-manzana",
-        "titulo": "Pay Manzana",
+        "title": "Pay Manzana",
         "imagen": "IMG/PayManzana.png",
-        "categoria": {
+        "category": {
             "nombre": "Pay",
             "id": "pay"
         },
-        "precio": 100
+        "price": 100
     },
 
     {
         "id": "pay-durazno",
-        "titulo": "Pay Durazno",
+        "title": "Pay Durazno",
         "imagen": "IMG/PayDurazno.png",
-        "categoria": {
+        "category": {
             "nombre": "Pay",
             "id": "pay"
         },
-        "precio": 105
+        "price": 105
     },
 
 
@@ -97,46 +98,46 @@
 
     {
         "id": "pastelillo-cupcakes",
-        "titulo": "Cupcakes",
+        "title": "Cupcakes",
         "imagen": "IMG/CupCake.png",
-        "categoria": {
+        "category": {
             "nombre": "Pastelillo",
             "id": "pastelillo"
         },
-        "precio": 25
+        "price": 25
     },
 
     {
         "id": "pastelillo-brownie",
-        "titulo": "Brownie",
+        "title": "Brownie",
         "imagen": "IMG/Brownie.png",
-        "categoria": {
+        "category": {
             "nombre": "Pastelillo",
             "id": "pastelillo"
         },
-        "precio": 30
+        "price": 30
     },
 
     {
         "id": "pastelillo-galleta-chocolate",
-        "titulo": "Galleta de Chocolate",
+        "title": "Galleta de Chocolate",
         "imagen": "IMG/GalletaChocolate.png",
-        "categoria": {
+        "category": {
             "nombre": "Pastelillo",
             "id": "pastelillo"
         },
-        "precio": 15
+        "price": 15
     },
 
     {
         "id": "pastelillo-galleta-mantequilla",
-        "titulo": "Galleta de Mantequilla",
+        "title": "Galleta de Mantequilla",
         "imagen": "IMG/GalletaMantequilla.png",
-        "categoria": {
+        "category": {
             "nombre": "Pastelillo",
             "id": "pastelillo"
         },
-        "precio": 10
+        "price": 10
     },
 
    
@@ -145,45 +146,45 @@
 
     {
         "id": "pan-zanahoria",
-        "titulo": "Pan de Zanahoria",
-        "imagen": "IMG/PanNaranja.png",
-        "categoria": {
+        "title": "Pan de Zanahoria",
+        "imagen": "IMG/PanZanahoria.png",
+        "category": {
             "nombre": "Pan",
             "id": "pan"
         },
-        "precio": 20
+        "price": 20
     },
 
     {
         "id": "pan-naranja",
-        "titulo": "Pan de Naranja",
-        "imagen": "IMG/PanZanahoria.png",
-        "categoria": {
+        "title": "Pan de Naranja",
+        "imagen": "IMG/PanNaranja.png",
+        "category": {
             "nombre": "Pan",
             "id": "pan"
         },
-        "precio": 20
+        "price": 20
     },
 
     {
         "id": "pan-nuez",
-        "titulo": "Pan de Nuez",
+        "title": "Pan de Nuez",
         "imagen": "IMG/PanNuez.jpg",
-        "categoria": {
+        "category": {
             "nombre": "Pan",
             "id": "pan"
         },
-        "precio": 20
+        "price": 20
     },
 
     {
         "id": "pan-nata",
-        "titulo": "Pan de Nata",
+        "title": "Pan de Nata",
         "imagen": "IMG/PanNata.png",
-        "categoria": {
+        "category": {
             "nombre": "Pan",
             "id": "pan"
         },
-        "precio": 20
+        "price": 20
     }
 ]

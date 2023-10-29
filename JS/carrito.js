@@ -21,29 +21,29 @@ function loadProductCart() {
     
         containerProductCart.innerHTML = "";
     
-        productsInCart.forEach(producto => {
+        productsInCart.forEach(product => {
     
             const div = document.createElement("div");
             div.classList.add("product-cart");
             div.innerHTML = `
-                <img class="product-imagen-cart" src="${product.imagen}" alt="${product.tittle}">
-                <div class="tittle-product-cart">
+                <img class="product-imagen-cart" src="${product.imagen}" alt="${product.title}">
+                <div class="title-product-cart">
                     <small>Título</small>
-                    <h3>${product.tittle}</h3>
+                    <h3>${product.title}</h3>
                 </div>
-                <div class="carrito-producto-cantidad">
+                <div class="quantity-product-cart">
                     <small>Cantidad</small>
                     <p>${product.cantidad}</p>
                 </div>
-                <div class="carrito-producto-precio">
+                <div class="price-product-cart">
                     <small>Precio</small>
                     <p>$${product.price}</p>
                 </div>
-                <div class="carrito-producto-subtotal">
+                <div class="subtotal-product-cart">
                     <small>Subtotal</small>
                     <p>$${product.price * product.cantidad}</p>
                 </div>
-                <button class="carrito-producto-eliminar" id="${product.id}"><i class="bi bi-trash-fill"></i></button>
+                <button class="delete-product-cart" id="${product.id}"><i class="bi bi-trash-fill"></i></button>
             `;
     
             containerProductCart.append(div);
@@ -98,7 +98,7 @@ function removeFromCart(e) {
     productsInCart.splice(index, 1);
     loadProductCart();
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productsInCart));
+    localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
 
 }
 
@@ -116,7 +116,7 @@ function emptyCart() {
     }).then((result) => {
         if (result.isConfirmed) {
             productsInCart.length = 0;
-            localStorage.setItem("productos-en-carrito", JSON.stringify(productsInCart));
+            localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductCart();
         }
       })

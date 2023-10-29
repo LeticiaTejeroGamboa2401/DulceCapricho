@@ -4,13 +4,13 @@ fetch("JS/productos.json")
     .then(response => response.json())
     .then(data => {
         products = data;
-        cargarProductos(products);
+        loadProducts(products);
     })
 
 
 const containerProducts = document.querySelector("#container-products");
 const buttonCategory = document.querySelectorAll(".button-category");
-const mainTittle = document.querySelector("#main-tittle");
+const mainTitle = document.querySelector("#main-title");
 let buttonAdd = document.querySelectorAll(".add-product");
 const numerito = document.querySelector("#numerito");
 
@@ -27,11 +27,11 @@ function loadProducts(chosenProduct) {
     chosenProduct.forEach(product => {
 
         const div = document.createElement("div");
-        div.classList.add("producto");
+        div.classList.add("product");
         div.innerHTML = `
             <img class="product-imagen" src="${product.imagen}" alt="${product.title}">
             <div class="product-details">
-                <h3 class="tittle-product">${product.tittle}</h3>
+                <h3 class="title-product">${product.title}</h3>
                 <p class="product-price">$${product.price}</p>
                 <button class="product-add" id="${product.id}">Agregar</button>
             </div>
@@ -52,11 +52,11 @@ buttonCategory.forEach(button => {
 
         if (e.currentTarget.id != "all") {
             const productCategory = products.find(product => product.category.id === e.currentTarget.id);
-            mainTittle.innerText = productCategory.category.nombre;
+            mainTitle.innerText = productCategory.category.nombre;
             const  buttonProduct = products.filter(product => product.category.id === e.currentTarget.id);
             loadProducts(buttonProduct);
         } else {
-            mainTittle.innerText = "Todos los productos";
+            mainTitle.innerText = "Todos los productos";
             loadProducts(products);
         }
 
@@ -116,7 +116,7 @@ function addToCart(e) {
 
     updateNumber();
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productsInCart));
+    localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
 }
 
 function updateNumber() {
