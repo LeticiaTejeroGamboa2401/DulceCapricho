@@ -40,7 +40,7 @@ function loadProducts(chosenProduct) {
         containerProducts.append(div);
     })
 
-    updateButtonsAdd();
+    updateButtonAdd();
 }
 
 
@@ -63,10 +63,10 @@ buttonCategory.forEach(button => {
     })
 });
 
-function updateButtonsAdd() {
-    buttonsAdd = document.querySelectorAll(".add-product");
+function updateButtonAdd() {
+    buttonAdd = document.querySelectorAll(".add-product");
 
-    buttonsAdd.forEach(button => {
+    buttonAdd.forEach(button => {
         button.addEventListener("click", addToCart);
     });
 }
@@ -108,9 +108,9 @@ function addToCart(e) {
 
     if(productsInCart.some(product => product.id === idButton)) {
         const index = productsInCart.findIndex(product => product.id === idButton);
-        productsInCart[index].cantidad++;
+        productsInCart[index].quantity++;
     } else {
-        addedProduct.cantidad = 1;
+        addedProduct.quantity = 1;
         productsInCart.push(addedProduct);
     }
 
@@ -120,6 +120,6 @@ function addToCart(e) {
 }
 
 function updateNumber() {
-    let newNumber = productsInCart.reduce((acc, product) => acc + product.cantidad, 0);
+    let newNumber = productsInCart.reduce((acc, product) => acc + product.quantity, 0);
     numerito.innerText = newNumber;
 }

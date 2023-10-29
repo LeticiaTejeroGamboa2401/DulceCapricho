@@ -33,7 +33,7 @@ function loadProductCart() {
                 </div>
                 <div class="quantity-product-cart">
                     <small>Cantidad</small>
-                    <p>${product.cantidad}</p>
+                    <p>${product.quantity}</p>
                 </div>
                 <div class="price-product-cart">
                     <small>Precio</small>
@@ -41,7 +41,7 @@ function loadProductCart() {
                 </div>
                 <div class="subtotal-product-cart">
                     <small>Subtotal</small>
-                    <p>$${product.price * product.cantidad}</p>
+                    <p>$${product.price * product.quantity}</p>
                 </div>
                 <button class="delete-product-cart" id="${product.id}"><i class="bi bi-trash-fill"></i></button>
             `;
@@ -92,8 +92,8 @@ function removeFromCart(e) {
         onClick: function(){} // Callback after click
       }).showToast();
 
-    const idBoton = e.currentTarget.id;
-    const index = productsInCart.findIndex(product => product.id === idBoton);
+    const idButton = e.currentTarget.id;
+    const index = productsInCart.findIndex(product => product.id === idButton);
     
     productsInCart.splice(index, 1);
     loadProductCart();
@@ -108,7 +108,7 @@ function emptyCart() {
     Swal.fire({
         title: '¿Estás seguro?',
         icon: 'question',
-        html: `Se van a borrar ${productsInCart.reduce((acc, product) => acc + product.cantidad, 0)} productos.`,
+        html: `Se van a borrar ${productsInCart.reduce((acc, product) => acc + product.quantity, 0)} productos.`,
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: 'Sí',
@@ -124,11 +124,11 @@ function emptyCart() {
 
 
 function updateAll() {
-    const calculatedTotal = productsInCart.reduce((acc, product) => acc + (product.price * product.cantidad), 0);
-    total.innerText = `$${calculatedTotal}`;
+    const calculatedTotal = productsInCart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
+    totalContainer.innerText = `$${calculatedTotal}`;
 }
 
-botonComprar.addEventListener("click", buyCart);
+buyButton.addEventListener("click", buyCart);
 function buyCart() {
 
     productsInCart.length = 0;
