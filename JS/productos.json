@@ -1,0 +1,189 @@
+[
+    {
+        "id": "pastel-chocolate",
+        "tittle": "Pastel Chocolate",
+        "imagen": "IMG/PastelChocolate.png",
+        "category": {
+            "nombre": "Pasteles",
+            "id": "pasteles"
+        },
+        "price": 150
+    },
+    {
+        "id": "pastel-fresa",
+        "tittle": "Pastel Fresa",
+        "imagen": "IMG/PastelFresas.png",
+        "category": {
+            "nombre": "Pasteles",
+            "id": "pasteles"
+        },
+        "price": 180
+    },
+
+    {
+        "id": "pastel-coco",
+        "tittle": "Pastel Coco",
+        "imagen": "IMG/PastelCoco.png",
+        "category": {
+            "nombre": "Pasteles",
+            "id": "pasteles"
+        },
+        "price": 200
+    },
+
+    {
+        "id": "pastel-tres-leches",
+        "titulo": "Pastel Tres Leches",
+        "imagen": "IMG/PastelTresLeches.png",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "pasteles"
+        },
+        "precio": 165
+    },
+
+
+
+
+
+
+    {
+        "id": "pay-queso",
+        "titulo": "Pay Queso",
+        "imagen": "IMG/PayQueso.png",
+        "categoria": {
+            "nombre": "Pay",
+            "id": "pay"
+        },
+        "precio": 95
+    },
+
+    {
+        "id": "pay-fresa",
+        "titulo": "Pay Fresa",
+        "imagen": "IMG/PayFresa.png",
+        "categoria": {
+            "nombre": "Pay",
+            "id": "pay"
+        },
+        "precio": 115
+    },
+
+    {
+        "id": "pay-manzana",
+        "titulo": "Pay Manzana",
+        "imagen": "IMG/PayManzana.png",
+        "categoria": {
+            "nombre": "Pay",
+            "id": "pay"
+        },
+        "precio": 100
+    },
+
+    {
+        "id": "pay-durazno",
+        "titulo": "Pay Durazno",
+        "imagen": "IMG/PayDurazno.png",
+        "categoria": {
+            "nombre": "Pay",
+            "id": "pay"
+        },
+        "precio": 105
+    },
+
+
+
+
+
+    {
+        "id": "pastelillo-cupcakes",
+        "titulo": "Cupcakes",
+        "imagen": "IMG/CupCake.png",
+        "categoria": {
+            "nombre": "Pastelillo",
+            "id": "pastelillo"
+        },
+        "precio": 25
+    },
+
+    {
+        "id": "pastelillo-brownie",
+        "titulo": "Brownie",
+        "imagen": "IMG/Brownie.png",
+        "categoria": {
+            "nombre": "Pastelillo",
+            "id": "pastelillo"
+        },
+        "precio": 30
+    },
+
+    {
+        "id": "pastelillo-galleta-chocolate",
+        "titulo": "Galleta de Chocolate",
+        "imagen": "IMG/GalletaChocolate.png",
+        "categoria": {
+            "nombre": "Pastelillo",
+            "id": "pastelillo"
+        },
+        "precio": 15
+    },
+
+    {
+        "id": "pastelillo-galleta-mantequilla",
+        "titulo": "Galleta de Mantequilla",
+        "imagen": "IMG/GalletaMantequilla.png",
+        "categoria": {
+            "nombre": "Pastelillo",
+            "id": "pastelillo"
+        },
+        "precio": 10
+    },
+
+   
+
+
+
+    {
+        "id": "pan-zanahoria",
+        "titulo": "Pan de Zanahoria",
+        "imagen": "IMG/PanNaranja.png",
+        "categoria": {
+            "nombre": "Pan",
+            "id": "pan"
+        },
+        "precio": 20
+    },
+
+    {
+        "id": "pan-naranja",
+        "titulo": "Pan de Naranja",
+        "imagen": "IMG/PanZanahoria.png",
+        "categoria": {
+            "nombre": "Pan",
+            "id": "pan"
+        },
+        "precio": 20
+    },
+
+    {
+        "id": "pan-nuez",
+        "titulo": "Pan de Nuez",
+        "imagen": "IMG/PanNuez.jpg",
+        "categoria": {
+            "nombre": "Pan",
+            "id": "pan"
+        },
+        "precio": 20
+    },
+
+    {
+        "id": "pan-nata",
+        "titulo": "Pan de Nata",
+        "imagen": "IMG/PanNata.png",
+        "categoria": {
+            "nombre": "Pan",
+            "id": "pan"
+        },
+        "precio": 20
+    }
+]
