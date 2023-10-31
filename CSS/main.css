@@ -279,6 +279,13 @@ main {
     display: none;
 }
 
+/*** IMÁGENES ***/
+
+.product-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
