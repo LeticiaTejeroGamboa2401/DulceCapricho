@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(Fondo.jpg);
+    background-image: url('../IMG/Fondo.jpg');
     background-size: cover;
 }
 
