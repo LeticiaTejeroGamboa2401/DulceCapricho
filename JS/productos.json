@@ -169,7 +169,7 @@
     {
         "id": "pan-nuez",
         "title": "Pan de Nuez",
-        "imagen": "IMG/PanNuez.jpg",
+        "imagen": "IMG/PanNuez.png",
         "category": {
             "nombre": "Pan",
             "id": "pan"
