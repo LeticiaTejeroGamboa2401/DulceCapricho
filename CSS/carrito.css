@@ -166,7 +166,7 @@ main {
     font-size: 1rem;
 }
 
-.product-add {
+.add-product {
     border: 0;
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -178,7 +178,7 @@ main {
     transition: background-color .2s, color .2s;
 }
 
-.product-add:hover {
+.add-product:hover {
     background-color: var(--clr-main);
     color: var(--clr-white);
 }

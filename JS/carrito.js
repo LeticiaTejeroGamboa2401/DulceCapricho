@@ -125,7 +125,7 @@ function emptyCart() {
 
 function updateAll() {
     const calculatedTotal = productsInCart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
-    totalContainer.innerText = `$${calculatedTotal}`;
+    totalContainer.innerText = `$${calculatedTotal.toFixed(2)}`;
 }
 
 buyButton.addEventListener("click", buyCart);

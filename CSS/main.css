@@ -162,7 +162,7 @@ main {
     font-size: 1rem;
 }
 
-.product-add {
+.add-product {
     border: 0;
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -174,7 +174,7 @@ main {
     transition: background-color .2s, color .2s;
 }
 
-.product-add:hover {
+.add-product:hover {
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
@@ -286,6 +286,33 @@ main {
     height: auto;
 }
 
+/*** MENU SÁNDWICH ***/
+.menu-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+}
+
+.open-menu:focus + .dropdown-menu,
+.dropdown-menu:focus {
+    display: block;
+}
+
+.open-menu {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+}
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
@@ -382,11 +409,23 @@ main {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
+
+    .open-menu {
+        display: block; /* Mostrar el botón de menú sándwich en dispositivos móviles */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
     
 
 }
 
-
+/* Estilos para dispositivos de escritorio (ancho mínimo de 601px) */
+@media screen and (min-width: 601px) {
+    .open-menu {
+        display: none; /* Ocultar el botón de menú sándwich en dispositivos de escritorio */
+    }
+}
 
 @media screen and (max-width: 400px) {
     .container-products {

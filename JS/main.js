@@ -33,7 +33,7 @@ function loadProducts(chosenProduct) {
             <div class="product-details">
                 <h3 class="title-product">${product.title}</h3>
                 <p class="product-price">$${product.price}</p>
-                <button class="product-add" id="${product.id}">Agregar</button>
+                <button class="add-product" id="${product.id}">Agregar</button>
             </div>
         `;
 
