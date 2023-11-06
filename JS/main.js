@@ -123,3 +123,21 @@ function updateNumber() {
     let newNumber = productsInCart.reduce((acc, product) => acc + product.quantity, 0);
     numerito.innerText = newNumber;
 }
+
+const encargoButton = document.querySelector("#encargo");
+
+encargoButton.addEventListener("click", () => {
+    const encargoForm = document.querySelector("#encargo-form");
+    if (encargoForm.style.display === "none" || encargoForm.style.display === "") {
+        encargoForm.style.display = "block";
+    } else {
+        encargoForm.style.display = "none";
+    }
+});
+
+function getMinDeliveryDate() {
+    const today = new Date();
+    today.setDate(today.getDate() + 3); // Suma 3 días a la fecha actual
+    const minDate = new Date(today.getTime() - (today.getTimezoneOffset() * 60000)).toISOString().split("T")[0];
+    return minDate;
+}
