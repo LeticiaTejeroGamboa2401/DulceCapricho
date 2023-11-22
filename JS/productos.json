@@ -1,206 +1,114 @@
 [
     {
-        "id": "pastel-chocolate",
-        "title": "Pastel Chocolate",
-        "imagen": "IMG/PastelChocolate.png",
-        "description" : "Delicioso pastel de chocolate con capas esponjosas y ganache sedoso, una indulgencia irresistible para amantes del chocolate." ,
-        "category": {
-            "nombre": "Pasteles",
-            "id": "pasteles"
-        },
-        "price": 150
+       "IDProducto":"pastel-chocolate",
+       "NombreProducto":"Pastel Chocolate",
+       "ImagenProducto":"IMG/PastelChocolate.png",
+       "DescripcionProducto":"Delicioso pastel de chocolate con capas esponjosas y ganache sedoso, una indulgencia irresistible para amantes del chocolate.",
+       "PrecioProducto":150
     },
-
     {
-        "id": "pastel-fresa",
-        "title": "Pastel Fresa",
-        "imagen": "IMG/PastelFresas.png",
-        "description" : "Fresco pastel de fresa con capas suaves, relleno de fresas frescas y crema, una experiencia dulce y frutal." ,
-        "category": {
-            "nombre": "Pasteles",
-            "id": "pasteles"
-        },
-        "price": 180
+       "IDProducto":"pastel-fresa",
+       "NombreProducto":"Pastel Fresa",
+       "ImagenProducto":"IMG/PastelFresas.png",
+       "DescripcionProducto":"Fresco pastel de fresa con capas suaves, relleno de fresas frescas y crema, una experiencia dulce y frutal.",
+       "PrecioProducto":180
     },
-
     {
-        "id": "pastel-coco",
-        "title": "Pastel Coco",
-        "imagen": "IMG/PastelCoco.png",
-        "description" : "Tropical pastel de coco con coco rallado y crema de coco, un viaje al paraíso en cada bocado." ,
-        "category": {
-            "nombre": "Pasteles",
-            "id": "pasteles"
-        },
-        "price": 200
+       "IDProducto":"pastel-coco",
+       "NombreProducto":"Pastel Coco",
+       "ImagenProducto":"IMG/PastelCoco.png",
+       "DescripcionProducto":"Tropical pastel de coco con coco rallado y crema de coco, un viaje al paraíso en cada bocado.",
+       "PrecioProducto":200
     },
-
     {
-        "id": "pastel-tres-leches",
-        "title": "Pastel Tres Leches",
-        "imagen": "IMG/PastelTresLeches.png",
-        "description" : "Cremoso pastel de tres leches empapado en indulgente mezcla de leches, una experiencia reconfortante y suave." ,
-        "category": {
-            "nombre": "Pasteles",
-            "id": "pasteles"
-        },
-        "price": 165
+       "IDProducto":"pastel-tres-leches",
+       "NombreProducto":"Pastel Tres Leches",
+       "ImagenProducto":"IMG/PastelTresLeches.png",
+       "DescripcionProducto":"Cremoso pastel de tres leches empapado en indulgente mezcla de leches, una experiencia reconfortante y suave.",
+       "PrecioProducto":165
     },
-
-
-
-
-
-
     {
-        "id": "pay-queso",
-        "title": "Pay Queso",
-        "imagen": "IMG/PayQueso.png",
-        "description" : "Pay de queso con mezcla cremosa sobre base de galleta, equilibrio perfecto entre dulce y salado." ,
-        "category": {
-            "nombre": "Pay",
-            "id": "pay"
-        },
-        "price": 95
+       "IDProducto":"pay-queso",
+       "NombreProducto":"Pay Queso",
+       "ImagenProducto":"IMG/PayQueso.png",
+       "DescripcionProducto":"Pay de queso con mezcla cremosa sobre base de galleta, equilibrio perfecto entre dulce y salado.",
+       "PrecioProducto":95
     },
-
     {
-        "id": "pay-fresa",
-        "title": "Pay Fresa",
-        "imagen": "IMG/PayFresa.png",
-        "description" : "Pay de fresa con mezcla de fresas frescas y relleno de queso, un deleite fresco y cremoso." ,
-        "category": {
-            "nombre": "Pay",
-            "id": "pay"
-        },
-        "price": 115
+       "IDProducto":"pay-fresa",
+       "NombreProducto":"Pay Fresa",
+       "ImagenProducto":"IMG/PayFresa.png",
+       "DescripcionProducto":"Pay de fresa con mezcla de fresas frescas y relleno de queso, un deleite fresco y cremoso.",
+       "PrecioProducto":115
     },
-
     {
-        "id": "pay-manzana",
-        "title": "Pay Manzana",
-        "imagen": "IMG/PayManzana.png",
-        "description" : "Clásico pay de manzana con relleno abundante y corteza dorada, una delicia reconfortante." ,
-        "category": {
-            "nombre": "Pay",
-            "id": "pay"
-        },
-        "price": 100
+       "IDProducto":"pay-manzana",
+       "NombreProducto":"Pay Manzana",
+       "ImagenProducto":"IMG/PayManzana.png",
+       "DescripcionProducto":"Clásico pay de manzana con relleno abundante y corteza dorada, una delicia reconfortante.",
+       "PrecioProducto":100
     },
-
     {
-        "id": "pay-durazno",
-        "title": "Pay Durazno",
-        "imagen": "IMG/PayDurazno.png",
-        "description" : "Pay de durazno con rebanadas jugosas y relleno cremoso, encerrado en corteza escamosa." ,
-        "category": {
-            "nombre": "Pay",
-            "id": "pay"
-        },
-        "price": 105
+       "IDProducto":"pay-durazno",
+       "NombreProducto":"Pay Durazno",
+       "ImagenProducto":"IMG/PayDurazno.png",
+       "DescripcionProducto":"Pay de durazno con rebanadas jugosas y relleno cremoso, encerrado en corteza escamosa.",
+       "PrecioProducto":105
     },
-
-
-
-
-
     {
-        "id": "pastelillo-cupcakes",
-        "title": "Cupcakes",
-        "imagen": "IMG/CupCake.png",
-        "description" : "Pastelillos decorados con maestría, porciones individuales de sabor exquisito." ,
-        "category": {
-            "nombre": "Pastelillo",
-            "id": "pastelillo"
-        },
-        "price": 25
+       "IDProducto":"pastelillo-cupcakes",
+       "NombreProducto":"Cupcakes",
+       "ImagenProducto":"IMG/CupCake.png",
+       "DescripcionProducto":"Pastelillos decorados con maestría, porciones individuales de sabor exquisito.",
+       "PrecioProducto":25
     },
-
     {
-        "id": "pastelillo-brownie",
-        "title": "Brownie",
-        "imagen": "IMG/Brownie.png",
-        "description" : "Brownie denso y húmedo, una indulgencia chocolatosa en cada bocado." ,
-        "category": {
-            "nombre": "Pastelillo",
-            "id": "pastelillo"
-        },
-        "price": 30
+       "IDProducto":"pastelillo-brownie",
+       "NombreProducto":"Brownie",
+       "ImagenProducto":"IMG/Brownie.png",
+       "DescripcionProducto":"Brownie denso y húmedo, una indulgencia chocolatosa en cada bocado.",
+       "PrecioProducto":30
     },
-
     {
-        "id": "pastelillo-galleta-chocolate",
-        "title": "Galleta de Chocolate",
-        "imagen": "IMG/GalletaChocolate.png",
-        "description" : "Galletas crujientes con trozos de chocolate derretido, un placer irresistible." ,
-        "category": {
-            "nombre": "Pastelillo",
-            "id": "pastelillo"
-        },
-        "price": 15
+       "IDProducto":"pastelillo-galleta-chocolate",
+       "NombreProducto":"Galleta de Chocolate",
+       "ImagenProducto":"IMG/GalletaChocolate.png",
+       "DescripcionProducto":"Galletas crujientes con trozos de chocolate derretido, un placer irresistible.",
+       "PrecioProducto":15
     },
-
     {
-        "id": "pastelillo-galleta-mantequilla",
-        "title": "Galleta de Mantequilla",
-        "imagen": "IMG/GalletaMantequilla.png",
-        "description" : "Galletas de mantequilla delicadas y deliciosas, perfectas para momentos de relax." ,
-        "category": {
-            "nombre": "Pastelillo",
-            "id": "pastelillo"
-        },
-        "price": 10
+       "IDProducto":"pastelillo-galleta-mantequilla",
+       "NombreProducto":"Galleta de Mantequilla",
+       "ImagenProducto":"IMG/GalletaMantequilla.png",
+       "DescripcionProducto":"Galletas de mantequilla delicadas y deliciosas, perfectas para momentos de relax.",
+       "PrecioProducto":10
     },
-
-   
-
-
-
     {
-        "id": "pan-zanahoria",
-        "title": "Pan de Zanahoria",
-        "imagen": "IMG/PanZanahoria.png",
-        "description" : "Jugoso pan de zanahoria con nueces, una fusión perfecta de sabores." ,
-        "category": {
-            "nombre": "Pan",
-            "id": "pan"
-        },
-        "price": 20
+       "IDProducto":"pan-zanahoria",
+       "NombreProducto":"Pan de Zanahoria",
+       "ImagenProducto":"IMG/PanZanahoria.png",
+       "DescripcionProducto":"Jugoso pan de zanahoria con nueces, una fusión perfecta de sabores.",
+       "PrecioProducto":20
     },
-
     {
-        "id": "pan-naranja",
-        "title": "Pan de Naranja",
-        "imagen": "IMG/PanNaranja.png",
-        "description" : "Refrescante pan de naranja con aroma cítrico y sabor jugoso." ,
-        "category": {
-            "nombre": "Pan",
-            "id": "pan"
-        },
-        "price": 20
+       "IDProducto":"pan-naranja",
+       "NombreProducto":"Pan de Naranja",
+       "ImagenProducto":"IMG/PanNaranja.png",
+       "DescripcionProducto":"Refrescante pan de naranja con aroma cítrico y sabor jugoso.",
+       "PrecioProducto":20
     },
-
     {
-        "id": "pan-nuez",
-        "title": "Pan de Nuez",
-        "imagen": "IMG/PanNuez.png",
-        "description" : "Nuestro pan de nuez combina la suavidad perfecta con trozos generosos de nueces, creando una experiencia de sabor única. Cada rebanada es una indulgencia reconfortante y deliciosa." ,
-        "category": {
-            "nombre": "Pan",
-            "id": "pan"
-        },
-        "price": 20
+       "IDProducto":"pan-nuez",
+       "NombreProducto":"Pan de Nuez",
+       "ImagenProducto":"IMG/PanNuez.png",
+       "DescripcionProducto":"Nuestro pan de nuez combina la suavidad perfecta con trozos generosos de nueces, creando una experiencia de sabor única. Cada rebanada es una indulgencia reconfortante y deliciosa.",
+       "PrecioProducto":20
     },
-
     {
-        "id": "pan-nata",
-        "title": "Pan de Nata",
-        "imagen": "IMG/PanNata.png",
-        "description" : "Suave pan de nata, una indulgencia reconfortante en cada rebanada." ,
-        "category": {
-            "nombre": "Pan",
-            "id": "pan"
-        },
-        "price": 20
+       "IDProducto":"pan-nata",
+       "NombreProducto":"Pan de Nata",
+       "ImagenProducto":"IMG/PanNata.png",
+       "DescripcionProducto":"Suave pan de nata, una indulgencia reconfortante en cada rebanada.",
+       "PrecioProducto":20
     }
-]
+ ]
