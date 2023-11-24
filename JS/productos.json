@@ -34,7 +34,7 @@
 
     {
         "id": "pastel-tres-leches",
-        "title": "Pastel Tres Leches",
+        "title": "Tres Leches",
         "imagen": "IMG/PastelTresLeches.png",
         "category": {
             "nombre": "Pasteles",
@@ -120,7 +120,7 @@
 
     {
         "id": "pastelillo-galleta-chocolate",
-        "title": "Galleta de Chocolate",
+        "title": "Chocolate",
         "imagen": "IMG/GalletaChocolate.png",
         "category": {
             "nombre": "Pastelillo",
@@ -131,7 +131,7 @@
 
     {
         "id": "pastelillo-galleta-mantequilla",
-        "title": "Galleta de Mantequilla",
+        "title": "Mantequilla",
         "imagen": "IMG/GalletaMantequilla.png",
         "category": {
             "nombre": "Pastelillo",

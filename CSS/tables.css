@@ -64,12 +64,6 @@ aside {
     width: 100%;
 }
 
-.button-menu > i.bi-bag-check,
-.button-menu > i.bi-person-check-fill,
-.button-menu > i.bi-ui-checks {
-    color: var(--clr-main);
-}
-
 .button-menu.active {
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -100,6 +94,23 @@ aside {
     background-color: transparent;
     border-top-right-radius: .5rem;
     box-shadow: 0 -1rem 0 var(--clr-white);
+}
+
+.button-menu > i.bi-hand-index-thumb-fill,
+.button-menu > i.bi-hand-index-thumb {
+    transform: rotateZ(90deg);
+}
+
+.numerito {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.button-admin.active .numerito {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .text-footer {
@@ -418,7 +429,6 @@ main {
     }
 }
 
-
 /*** Tabla ***/
 main {
     background-color: var(--clr-white);
@@ -449,4 +459,10 @@ th, td {
 th {
     background-color: var(--clr-main);
     color: var(--clr-white);
+}
+
+.button-menu > i.bi-bag-check,
+.button-menu > i.bi-person-check-fill,
+.button-menu > i.bi-ui-checks {
+    color: var(--clr-gray);
 }
