@@ -44,10 +44,6 @@ aside {
     justify-content: space-between;
 }
 
-header .logo {
-    margin-right: 1.5rem;
-}
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -66,6 +62,12 @@ header .logo {
     padding: 1rem;
     font-size: .85rem;
     width: 100%;
+}
+
+.button-menu > i.bi-bag-check,
+.button-menu > i.bi-person-check-fill,
+.button-menu > i.bi-ui-checks {
+    color: var(--clr-main);
 }
 
 .button-menu.active {
@@ -98,27 +100,6 @@ header .logo {
     background-color: transparent;
     border-top-right-radius: .5rem;
     box-shadow: 0 -1rem 0 var(--clr-white);
-}
-
-.button-menu > i.bi-hand-index-thumb-fill,
-.button-menu > i.bi-hand-index-thumb {
-    transform: rotateZ(90deg);
-}
-
-.button-cart {
-    margin-top: 2rem;
-}
-
-.numerito {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
-    padding: .15rem .25rem;
-    border-radius: .25rem;
-}
-
-.button-cart.active .numerito {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
 }
 
 .text-footer {
@@ -283,6 +264,40 @@ main {
     display: none;
 }
 
+/*** IMÁGENES ***/
+
+.product-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+/*** MENU SÁNDWICH ***/
+.menu-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+}
+
+.open-menu:focus + .dropdown-menu,
+.dropdown-menu:focus {
+    display: block;
+}
+
+.open-menu {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+}
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
@@ -379,14 +394,59 @@ main {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
+
+    .open-menu {
+        display: block; /* Mostrar el botón de menú sándwich en dispositivos móviles */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
     
 
 }
 
-
+/* Estilos para dispositivos de escritorio (ancho mínimo de 601px) */
+@media screen and (min-width: 601px) {
+    .open-menu {
+        display: none; /* Ocultar el botón de menú sándwich en dispositivos de escritorio */
+    }
+}
 
 @media screen and (max-width: 400px) {
     .container-products {
         grid-template-columns: 1fr;
     }
+}
+
+
+/*** Tabla ***/
+main {
+    background-color: var(--clr-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+    overflow-x: auto; /* Permite hacer scroll horizontal si la tabla es ancha */
+}
+
+h2 {
+    color: var(--clr-main);
+    margin-bottom: 1.5rem; /* Espaciado inferior para el título de la tabla */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem; /* Espaciado superior para la tabla */
+}
+
+th, td {
+    border: 1px solid var(--clr-gray);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
