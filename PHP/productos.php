@@ -38,8 +38,8 @@ if ($result->num_rows > 0) {
                 <td>{$row['precio_mayoreo']}</td>
                 <td>{$row['precio_venta']}</td>
                 <td>{$row['total_existencia']}</td>
-                <td><a href='editar.php?id={$row['id']}'>Modificar</a></td>
-                <td><a href='eliminar.php?id={$row['id']}'>Eliminar</a></td>
+                <td><a href='javascript:void(0);' onclick='mostrarFormulario({$row['id']})'>Modificar</a></td>
+                <td><a href='eliminar.php' id={$row['id']}'>Eliminar</a></td>
               </tr>";
     }
 } else {

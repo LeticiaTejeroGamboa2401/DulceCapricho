@@ -69,17 +69,36 @@
             </div>
             <div>
                 <h2>Lista de Productos</h2>
-                    <table border="1">
-                        <tr>
-                            <th>Nombre del Producto</th>
-                            <th>Precio Mayoreo</th>
-                            <th>Precio Venta</th>
-                            <th>Total Existencia</th>
-                            <th>Modificar</th>
-                            <th>Eliminar</th>
-                        </tr>
-                        <!-- Aquí se mostrarán los productos -->
-                    </table>
+                <button id="añadirProducto" onclick="mostrarFormulario()">Añadir producto</button>
+                <table border="1">
+                    <tr>
+                        <th>Nombre del Producto</th>
+                        <th>Precio Mayoreo</th>
+                        <th>Precio Venta</th>
+                        <th>Total Existencia</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <!-- Aquí se mostrarán los productos -->
+                </table>
+                <div id="formularioAgregar" style="display: none;">
+                    <form action="productos.php" method="post">
+                        <label for="nombre">Nombre del Producto:</label>
+                        <input type="text" name="nombre" required>
+                        
+                        <label for="mayoreo">Precio Mayoreo:</label>
+                        <input type="number" name="mayoreo" required>
+                        
+                        <label for="venta">Precio Venta:</label>
+                        <input type="number" name="venta" required>
+                        
+                        <label for="existencia">Total Existencia:</label>
+                        <input type="number" name="existencia" required>
+                        
+                        <button type="button" id="agregarProducto" onclick="ocultarFormulario()">Cancelar</button>
+                        <button type="submit" id="agregarProducto" onclick="validarFormulario()">Agregar</button>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
@@ -87,5 +106,45 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js@1.0.4/dist/toastify.min.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/menu.js"></script>
+
+    <script>
+        function mostrarFormulario(idProducto) {
+            document.getElementById("formularioAgregar").style.display = "block";
+    
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var producto = JSON.parse(xhr.responseText);
+    
+                    
+                    document.getElementsByName("nombre")[0].value = producto.nombre_producto;
+                    document.getElementsByName("mayoreo")[0].value = producto.precio_mayoreo;
+                    document.getElementsByName("venta")[0].value = producto.precio_venta;
+                    document.getElementsByName("existencia")[0].value = producto.total_existencia;
+                }
+            };
+            xhr.open("GET", "obtenerProducto.php?id=" + idProducto, true);
+            xhr.send();
+        }
+        function ocultarFormulario() {
+            document.getElementById("formularioAgregar").style.display = "none";
+        }
+
+        function validarFormulario() {
+            var nombre = document.getElementsByName("nombre")[0].value;
+            var mayoreo = document.getElementsByName("mayoreo")[0].value;
+            var venta = document.getElementsByName("venta")[0].value;
+            var existencia = document.getElementsByName("existencia")[0].value;
+
+            if (nombre === '' || mayoreo === '' || venta === '' || existencia === '') {
+                alert("Por favor, complete todos los campos del formulario.");
+                return false; // Detiene el envío del formulario si algún campo está vacío
+            }
+            else{
+                ocultarFormulario();
+                return true;
+            }
+        }    
+    </script>
 </body>
 </html>
