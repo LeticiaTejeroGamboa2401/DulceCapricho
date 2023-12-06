@@ -44,10 +44,6 @@ aside {
     justify-content: space-between;
 }
 
-header .logo {
-    margin-right: 1.5rem;
-}
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -105,7 +101,21 @@ header .logo {
     transform: rotateZ(90deg);
 }
 
+.button-cart {
+    margin-top: 2rem;
+}
 
+.numerito {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.button-cart.active .numerito {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+}
 
 .text-footer {
     color: var(--clr-main-light);
@@ -131,37 +141,42 @@ main {
     gap: 1rem;
 }
 
-/** FORMULARIO **/
-
-form {
-    max-width: 600px;
-    margin: auto;
+.product-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
+.product-details {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-radius: 2%;
+.product-title {
+    font-size: 1rem;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+.add-product {
+    border: 0;
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
     cursor: pointer;
+    border: 2px solid var(--clr-white);
+    transition: background-color .2s, color .2s;
 }
 
-button:hover {
-    background-color: #45a049;
+.add-product:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 
@@ -264,11 +279,76 @@ button:hover {
     display: none;
 }
 
+/*** IMÁGENES ***/
+
+.product-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+/*** MENU SÁNDWICH ***/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+}
+
+.open-menu:focus + .dropdown-menu,
+.dropdown-menu:focus {
+    display: block;
+}
+
+.open-menu {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+}
+
+
+/** FORMULARIO **/
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
     .container-products {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -360,11 +440,23 @@ button:hover {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
+
+    .open-menu {
+        display: block; /* Mostrar el botón de menú sándwich en dispositivos móviles */
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
     
 
 }
 
-
+/* Estilos para dispositivos de escritorio (ancho mínimo de 601px) */
+@media screen and (min-width: 601px) {
+    .open-menu {
+        display: none; /* Ocultar el botón de menú sándwich en dispositivos de escritorio */
+    }
+}
 
 @media screen and (max-width: 400px) {
     .container-products {

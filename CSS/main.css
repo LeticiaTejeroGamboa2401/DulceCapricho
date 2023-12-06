@@ -287,10 +287,6 @@ main {
 }
 
 /*** MENU SÁNDWICH ***/
-.menu-container {
-    position: relative;
-}
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -313,17 +309,37 @@ main {
     right: 10px; /* Ajusta la posición horizontal según tus preferencias */
 }
 
+.button-m-cart {
+    background-color: transparent;
+    color: var(--clr-main);
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
     .container-products {
         grid-template-columns: 1fr 1fr;
     }
+
+    .main-title {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 675px) {
     .container-products {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title {
+        margin-top: 2rem;
     }
 }
 
@@ -390,8 +406,27 @@ main {
     .close-menu {
         display: block;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 10px;
+        right: 10px;
+    }
+
+    .button-m-cart {
+        background-color: transparent;
+        color: var(--clr-main);
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        font-size: 18px;
+
+        margin: 0;
+        margin-top: 10px;
+        right: 4.5rem;
+        padding: 0rem;
+    }
+
+    .main-title {
+       margin-top: 2rem;
     }
 
     .product-cart {
@@ -411,19 +446,17 @@ main {
     }
 
     .open-menu {
-        display: block; /* Mostrar el botón de menú sándwich en dispositivos móviles */
+        display: block;
         position: absolute;
         top: 10px;
         right: 25px;
     }
-    
-
 }
 
 /* Estilos para dispositivos de escritorio (ancho mínimo de 601px) */
 @media screen and (min-width: 601px) {
     .open-menu {
-        display: none; /* Ocultar el botón de menú sándwich en dispositivos de escritorio */
+        display: none;
     }
 }
 

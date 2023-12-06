@@ -18,6 +18,9 @@
                 <h1 class="logo"><img src="IMG/LOGO.png" width="324" height="155" alt="Dulce Capricho Logo"></h1>
             </header>
             <nav>
+                <button class="close-menu" id="close-menu">
+                    <i class="bi bi-x"></i>
+                </button>
                 <ul class="menu">
                     <li>
                         <a class="button-menu button-admin" href="usuarios.html">
@@ -32,7 +35,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="button-menu button-admin" href="pedidos.html">
+                        <a class="button-menu button-admin button-category active" href="pedidos.html">
                             <i class="bi bi-ui-checks"></i>
                             Pedidos
                         </a>
@@ -51,28 +54,9 @@
         </aside>
 
         <main>
-            <div>
-                <ul class="menu dropdown-menu">
-                    <li>
-                        <a class="button-menu button-admin" href="usuarios.html">
-                            <i class="bi bi-person-check-fill"></i>
-                            Clientes
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button-menu button-admin" href="productos.html">
-                            <i class="bi bi-bag-check"></i>
-                            Productos
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button-menu button-admin" href="pedidos.html">
-                            <i class="bi bi-ui-checks"></i>
-                            Pedidos
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-menu-button-wide" style="color: #926739; align-items: right;"></i>
+            </button>
             <div>
                 <h2>Pedidos</h2>
                 <table border="1">
@@ -83,6 +67,7 @@
                         <th>Fecha de Pedido</th>
                         <th>Estado</th>
                         <th>Acciones</th>
+                        <th>Realizado</th>
                     </tr>
                     <!-- Aquí se mostrarán los productos -->
                 </table>

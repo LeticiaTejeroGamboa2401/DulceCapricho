@@ -101,6 +101,10 @@ aside {
     transform: rotateZ(90deg);
 }
 
+.button-cart {
+    margin-top: 2rem;
+}
+
 .numerito {
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -108,7 +112,7 @@ aside {
     border-radius: .25rem;
 }
 
-.button-admin.active .numerito {
+.button-cart.active .numerito {
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
@@ -283,9 +287,6 @@ main {
 }
 
 /*** MENU SÁNDWICH ***/
-.menu-container {
-    position: relative;
-}
 
 .dropdown-menu {
     display: none;
@@ -313,7 +314,7 @@ main {
 
 @media screen and (max-width: 850px) {
     .container-products {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -407,13 +408,11 @@ main {
     }
 
     .open-menu {
-        display: block; /* Mostrar el botón de menú sándwich en dispositivos móviles */
+        display: block;
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 25px;
     }
-    
-
 }
 
 /* Estilos para dispositivos de escritorio (ancho mínimo de 601px) */
@@ -498,4 +497,26 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--clr-main);
+    border: 1px solid var(--clr-main);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+td.checkbox-cell {
+    padding: 8px;
 }

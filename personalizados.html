@@ -13,13 +13,14 @@
 
     <div class="wrapper">
         <aside>
-            <button class="close-menu" id="close-menu">
-                <i class="bi bi-x"></i>
-            </button>
+            
             <header>
                 <h1 class="logo"><img src="IMG/LOGO.png" width="324" height="155"></h1>
             </header>
             <nav>
+                <button class="close-menu" id="close-menu">
+                    <i class="bi bi-x"></i>
+                </button>
                 <ul>
                     <li>
                         <a class="button-menu" href="index.html">
@@ -45,6 +46,9 @@
             </footer>
         </aside>
         <main>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-menu-button-wide" style="color: #926739; align-items: right;"></i>
+            </button>
             <h2 class="main-title"> Encargos Personalizados </h2>
             <div class="container-charge">
                 <form action="procesarEncargo.php" method="post">
@@ -99,6 +103,7 @@
         </main>
     </div>
     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js@1.0.4/dist/toastify.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/encargos.js"></script>

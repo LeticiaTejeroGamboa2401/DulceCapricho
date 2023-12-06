@@ -287,9 +287,6 @@ main {
 }
 
 /*** MENU SÁNDWICH ***/
-.menu-container {
-    position: relative;
-}
 
 .dropdown-menu {
     display: none;
@@ -416,7 +413,6 @@ main {
         top: 10px;
         right: 25px;
     }
-    
 
 }
 

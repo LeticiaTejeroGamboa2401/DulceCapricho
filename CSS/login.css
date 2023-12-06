@@ -53,16 +53,16 @@ body {
 .info-childs input{
     background-color: transparent;
     outline: none;
-    border: solid 2px #9191bd;
+    border: solid 2px #926739;
     border-radius: 20px;
     padding: 10px 20px;
-    color: #9191bd;
+    color: #926739;
     cursor: pointer;
     transition: background-color .3s ease;
 }
 
 .info-childs input:hover {
-    background-color: #9191bd;
+    background-color: #926739;
     border: none;
     color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
@@ -104,14 +104,14 @@ body {
     padding: 15px;
     cursor: pointer;
     margin: 0 10px;
-    color: #9191bd;
+    color: #926739;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    border: solid thin #9191bd;
+    border: solid thin #926739;
 }
 
 .icons i:hover {
-    background-color: #c7c7f3;
+    background-color: #926739;
     color: #fff;
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 .form input[type="submit"] {
-    background-color: #9191bd;
+    background-color: #926739;
     color: #fff;
     border-radius: 20px;
     border: none;
@@ -155,7 +155,7 @@ body {
 }
 
 .form input[type="submit"]:hover {
-    background-color: #7a7a9a;
+    background-color: #926739;
     
 }
 
@@ -178,15 +178,19 @@ a {
 
 /* RESPONSIVE FORM */
 
-@media screen and (max-widht:730px) {
+@media screen and (max-width: 730px) {
     html {
         font-size: 12px;
     }
 }
 
-@media screen and (max-widht:580px) {
+@media screen and (max-width: 580px) {
     html {
         font-size: 10px;
+    }
+
+    .icons i {
+        margin: 0 5px;
     }
 
     .container-form {
