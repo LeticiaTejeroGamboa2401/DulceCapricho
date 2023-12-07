@@ -1,0 +1,22 @@
+body {
+    background-image: url('../IMG/fondo-dangerous.gif');
+    color: #00ff00;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+  
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.8);
+    margin-top: 10rem;
+}
+
+  

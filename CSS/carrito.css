@@ -317,11 +317,43 @@ main {
     .container-products {
         grid-template-columns: 1fr 1fr;
     }
+
+    .product-cart {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }
+
+    .cart-product-subtotal {
+        display: none;
+    }
+
+    .action-cart {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
 }
 
 @media screen and (max-width: 675px) {
     .container-products {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .product-cart {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }
+
+    .cart-product-subtotal {
+        display: none;
+    }
+
+    .action-cart {
+        flex-wrap: wrap;
+        row-gap: 1rem;
     }
 }
 

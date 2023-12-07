@@ -8,7 +8,7 @@ const containerPurchasedCart = document.querySelector("#purchased-cart");
 let buttonsDelete = document.querySelectorAll(".delete-product-cart");
 const emptyButton = document.querySelector("#empty-actions-cart");
 const totalContainer = document.querySelector("#total");
-const buyButton = document.querySelector("#buy-actions-cart");
+const buyButton = document.querySelector("#buy-action-cart");
 
 
 function loadProductCart() {
