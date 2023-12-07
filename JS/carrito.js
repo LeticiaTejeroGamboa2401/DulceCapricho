@@ -2,8 +2,8 @@ let productsInCart = localStorage.getItem("products-in-cart");
 productsInCart = JSON.parse(productsInCart);
 
 const containerEmptyCart = document.querySelector("#empty-cart");
-const containerProductCart = document.querySelector("#product-cart");
-const containerActionsCart = document.querySelector("#actions-cart");
+const containerProductCart = document.querySelector("#products-cart");
+const containerActionsCart = document.querySelector("#action-cart");
 const containerPurchasedCart = document.querySelector("#purchased-cart");
 let buttonsDelete = document.querySelectorAll(".delete-product-cart");
 const emptyButton = document.querySelector("#empty-actions-cart");
@@ -43,7 +43,9 @@ function loadProductCart() {
                     <small>Subtotal</small>
                     <p>$${product.price * product.quantity}</p>
                 </div>
-                <button class="delete-product-cart" id="${product.id}"><i class="bi bi-trash-fill"></i></button>
+                <button class="delete-product-cart" id="${product.id}" style="background-color: transparent; border:none;">
+                    <i class="bi bi-trash-fill" style="font-size: 1.5rem; color: #ff0000;"></i>
+                </button>
             `;
     
             containerProductCart.append(div);
@@ -76,21 +78,21 @@ function removeFromCart(e) {
         text: "Producto eliminado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          background: "linear-gradient(to right, #926739, #b38d64)",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem',
+            y: '1.5rem' 
           },
-        onClick: function(){} // Callback after click
-      }).showToast();
+        onClick: function(){}
+    }).showToast();
 
     const idButton = e.currentTarget.id;
     const index = productsInCart.findIndex(product => product.id === idButton);
@@ -119,7 +121,7 @@ function emptyCart() {
             localStorage.setItem("products-in-cart", JSON.stringify(productsInCart));
             loadProductCart();
         }
-      })
+    })
 }
 
 

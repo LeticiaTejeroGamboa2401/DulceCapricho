@@ -1,7 +1,7 @@
 [
     {
         "id": "pastel-chocolate",
-        "title": "Pastel Chocolate",
+        "title": "Chocolate",
         "imagen": "IMG/PastelChocolate.png",
         "category": {
             "nombre": "Pasteles",
