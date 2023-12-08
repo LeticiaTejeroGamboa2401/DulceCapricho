@@ -29,7 +29,7 @@ Brindar una herramienta que funcione como un punto de venta para digitalizar las
 
 # índice
 * [Documento de especificación de requisitos de software](Documentacion/ERS_DulceCapricho.pdf)
-* [Documento de interfaces gráficas en Figma](https://www.figma.com/file/XpnUxgMsWe0bnbcwcJeXL0/Untitled?type=design&node-id=0-1&mode=design&t=KasYtwFXAVsQ4J5l-0)
+* [Documento de interfaces gráficas en Figma](Documentacion/Documento_Figma.pdf)
 * [Diagrama de base de datos](Documentacion/Diagrama_BD.pdf)
 * [Complejidad ciclomática](Documentacion/Complejidad_Ciclomatica.pdf)
 * [Manual de usuario](Documentacion/Manual_De_Usuario.pdf)
