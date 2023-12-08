@@ -28,10 +28,11 @@ El sistema Dulce Capricho pretende ser un punto de venta especializado en el ár
 Brindar una herramienta que funcione como un punto de venta para digitalizar las ventas del negocio Dulce Capricho otorgando una experiencia de usuario agradable en las modalidades PickUp y Envío a domicilio.
 
 # índice
+
 * [Documento de especificación de requisitos de software](Documentacion/ERS_DulceCapricho.pdf)
 * [Documento de interfaces gráficas en Figma](Documentacion/Documento_Figma.pdf)
+* [Enlace página funcional en servidor remoto](www.dulcecapricho.live/index.php)
 * [Diagrama de base de datos](Documentacion/Diagrama_BD.pdf)
 * [Complejidad ciclomática](Documentacion/Complejidad_Ciclomatica.pdf)
 * [Manual de usuario](Documentacion/Manual_De_Usuario.pdf)
-* [Metodología y roles]() // PENDIENTE.
-* [Métricas]() // PENDIENTE.
+* [Métricas](Documentacion/DocumentoMetricas.pdf)
