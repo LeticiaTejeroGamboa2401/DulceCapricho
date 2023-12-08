@@ -31,7 +31,7 @@ Brindar una herramienta que funcione como un punto de venta para digitalizar las
 
 * [Documento de especificación de requisitos de software](Documentacion/ERS_DulceCapricho.pdf)
 * [Documento de interfaces gráficas en Figma](Documentacion/Documento_Figma.pdf)
-* [Enlace página funcional en servidor remoto](www.dulcecapricho.live/index.php)
+* [Enlace página funcional en servidor remoto](https://dulcecapricho.live/index.php)
 * [Diagrama de base de datos](Documentacion/Diagrama_BD.pdf)
 * [Complejidad ciclomática](Documentacion/Complejidad_Ciclomatica.pdf)
 * [Manual de usuario](Documentacion/Manual_De_Usuario.pdf)
